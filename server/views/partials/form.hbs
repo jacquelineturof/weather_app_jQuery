@@ -5,3 +5,30 @@
         Your browser is not supported
     </video>
 </div>
+
+<form action="http://localhost:3000/weather" method = "POST" class="form">
+    <div class="u-margin-top-small">
+        <h2 class="heading-secondary">Enter Your Location</h2>
+    </div>
+
+    <div class="form__group">
+
+        <i class = "fas fa-map-marker-alt form__icon"></i>
+        <input type="number" 
+            class="form__input" 
+            id ="zip"
+            name = "zip" 
+            placeholder = "Zip Code">
+    </div>
+    
+    <button type = "button" class = "form__toggle">custom</button>
+    
+    <select class = "form__options">
+        <option value = "hourly">Hourly</option>
+        <option value = "one-day">1 Day</option>
+        <option value = "five-day">5 Day</option>
+        <option value = "five-day">10 Day</option>
+    </select>
+    
+    <button type = "submit" class = "form__submit">submit</button>
+</form>

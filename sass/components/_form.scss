@@ -1,0 +1,75 @@
+.form {
+    height: 60%;
+    width: 30%;
+    background-color: transparent;
+    position: absolute;
+    top: 27%;
+    left: 10%;
+    text-align: center;
+    color: $color-white;
+
+    &__group {
+        margin: 2rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        font-size: 2.4rem;
+        margin-right: 1rem;
+    }
+
+    &__toggle,
+    &__submit {
+        margin-top: 1rem;
+        padding: 1rem 5rem;
+        border-radius: 2rem;
+        font-family: $default-font-type;
+        font-size: 1.6rem;
+        letter-spacing: .5rem;
+
+        &:hover {
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+            transform: translateY(-.2rem);
+        }
+        
+        &:active,
+        &:focus {
+            outline: none;
+            border: none;
+
+        }
+
+        &:active {
+            box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+            transform: translateY(0);
+        }
+    }
+
+    &__input {
+        height: 5rem;
+        width: 20rem;
+        margin: 0;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $color-white;
+        font-size: 2.4rem;
+        font-family: $default-font-type;
+        text-align: center;
+        background-color: transparent;
+        color: $color-white;
+    }
+
+    &__options {
+        display: block;
+        border-radius: 2rem;
+        font-family: $default-font-type;
+        font-size: 1.6rem;
+        letter-spacing: .5rem;
+        width: 20rem;
+        height: 3rem;
+        background-color: $color-white;
+        margin: 3rem auto;
+    }
+}

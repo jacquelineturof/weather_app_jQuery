@@ -2,9 +2,12 @@
 @import "abstracts/variables";
 
 @import "base/base";
+@import "base/typography";
+@import "base/utils";
 
 @import "components/nav";
 @import "components/bg-video";
+@import "components/form";
 
 @import "layout/grid";
 

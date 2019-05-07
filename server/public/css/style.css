@@ -12,11 +12,25 @@ html {
 body {
   box-sizing: border-box; }
 
-.nav {
-  height: 7vh;
+.container {
+  height: 100vh;
   width: 100vw;
+  position: relative; }
+
+.heading-secondary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: .5rem; }
+
+.u-margin-top-small {
+  margin-top: 1rem !important; }
+
+.nav {
+  height: 7%;
+  width: 100%;
   background-color: transparent;
-  margin-top: 2rem; }
+  position: absolute;
+  top: 1%; }
   .nav__items {
     height: 100%;
     width: 100%;
@@ -48,6 +62,62 @@ body {
     width: 100%;
     object-fit: cover;
     overflow: hidden; }
+
+.form {
+  height: 60%;
+  width: 30%;
+  background-color: transparent;
+  position: absolute;
+  top: 27%;
+  left: 10%;
+  text-align: center;
+  color: #fff; }
+  .form__group {
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .form__icon {
+    font-size: 2.4rem;
+    margin-right: 1rem; }
+  .form__toggle, .form__submit {
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+    border-radius: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .5rem; }
+    .form__toggle:hover, .form__submit:hover {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-0.2rem); }
+    .form__toggle:active, .form__toggle:focus, .form__submit:active, .form__submit:focus {
+      outline: none;
+      border: none; }
+    .form__toggle:active, .form__submit:active {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateY(0); }
+  .form__input {
+    height: 5rem;
+    width: 20rem;
+    margin: 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 2.4rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    background-color: transparent;
+    color: #fff; }
+  .form__options {
+    display: block;
+    border-radius: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .5rem;
+    width: 20rem;
+    height: 3rem;
+    background-color: #fff;
+    margin: 3rem auto; }
 
 .row {
   max-width: 114rem;
